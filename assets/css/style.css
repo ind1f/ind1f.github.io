@@ -61,15 +61,6 @@ header a:hover {
   font-weight: 600;
 }
 
-nav a {
-  margin-left: 1.25rem;
-  color: var(--muted);
-}
-
-nav a:hover {
-  color: var(--fg);
-}
-
 h1 {
   font-size: 1.6rem;
   line-height: 1.25;
