@@ -1,8 +1,7 @@
 ---
 layout: post
-title: Hello, world
+title: Hello, World!
 ---
 
-First post. The site is up.
+Hello, World!
 
-New posts go in `_posts/` as `YYYY-MM-DD-title.md`.
