@@ -147,14 +147,6 @@ hr {
   margin-top: 4rem;
 }
 
-footer {
-  margin-top: 5rem;
-  padding-top: 1.5rem;
-  border-top: 1px solid var(--rule);
-  color: var(--muted);
-  font-size: 0.85rem;
-}
-
 @media (max-width: 480px) {
   .posts li {
     flex-direction: column;
