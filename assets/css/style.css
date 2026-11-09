@@ -1,0 +1,163 @@
+:root {
+  --bg: #fff;
+  --fg: #000;
+  --muted: #666;
+  --rule: #e5e5e5;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #000;
+    --fg: #fff;
+    --muted: #999;
+    --rule: #222;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 17px;
+}
+
+body {
+  margin: 0 auto;
+  max-width: 40rem;
+  padding: 3rem 1.25rem;
+  background: var(--bg);
+  color: var(--fg);
+  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: inherit;
+  text-underline-offset: 0.2em;
+}
+
+a:hover {
+  text-decoration-thickness: 2px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 4rem;
+}
+
+header a {
+  text-decoration: none;
+}
+
+header a:hover {
+  text-decoration: underline;
+}
+
+.name {
+  font-weight: 600;
+}
+
+nav a {
+  margin-left: 1.25rem;
+  color: var(--muted);
+}
+
+nav a:hover {
+  color: var(--fg);
+}
+
+h1 {
+  font-size: 1.6rem;
+  line-height: 1.25;
+  margin: 0 0 0.5rem;
+}
+
+h2 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 3rem 0 1rem;
+}
+
+.intro p {
+  margin: 0 0 1rem;
+}
+
+.posts {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.posts li {
+  display: flex;
+  gap: 1.5rem;
+  padding: 0.4rem 0;
+}
+
+time {
+  color: var(--muted);
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 0.85rem;
+  flex-shrink: 0;
+  padding-top: 0.15rem;
+}
+
+article time {
+  display: block;
+  margin-bottom: 2.5rem;
+}
+
+article h2 {
+  font-size: 1.2rem;
+}
+
+article img {
+  max-width: 100%;
+}
+
+blockquote {
+  margin: 1.5rem 0;
+  padding-left: 1rem;
+  border-left: 2px solid var(--fg);
+  color: var(--muted);
+}
+
+code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 0.875em;
+}
+
+pre {
+  overflow-x: auto;
+  padding: 1rem;
+  border: 1px solid var(--rule);
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid var(--rule);
+  margin: 2.5rem 0;
+}
+
+.back {
+  margin-top: 4rem;
+}
+
+footer {
+  margin-top: 5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--rule);
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+@media (max-width: 480px) {
+  .posts li {
+    flex-direction: column;
+    gap: 0;
+  }
+}

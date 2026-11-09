@@ -1,1 +1,19 @@
+---
+layout: default
+---
+<section class="intro">
+  <p>Hi, I'm ind1f. This is my corner of the internet.</p>
+  <p>I write here sometimes.</p>
+</section>
 
+<section>
+  <h2>Recent writing</h2>
+  <ul class="posts">
+    {% for post in site.posts limit: 5 %}
+    <li>
+      <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: '%Y-%m-%d' }}</time>
+      <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+    </li>
+    {% endfor %}
+  </ul>
+</section>
